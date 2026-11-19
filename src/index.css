@@ -1,1 +1,46 @@
 @import "tailwindcss";
+
+@theme {
+  --color-cream: #faf6ee;
+  --color-paper: #fffdf8;
+  --color-forest: #1f4d3a;
+  --color-forest-dark: #163a2b;
+  --color-ink: #2b3440;
+  --color-gold: #b8862b;
+  --color-line: #e5dcc9;
+  --font-sans: "DM Sans", system-ui, sans-serif;
+  --font-serif: "Lora", Georgia, serif;
+}
+
+@layer base {
+  body {
+    @apply bg-cream text-ink font-sans antialiased;
+  }
+  html[lang="ur"] body {
+    font-family: "Noto Naskh Arabic", serif;
+    line-height: 1.9;
+  }
+  html[lang="si"] body {
+    font-family: "Noto Sans Sinhala", sans-serif;
+    line-height: 1.7;
+  }
+  html[lang="ta"] body {
+    font-family: "Noto Sans Tamil", sans-serif;
+    line-height: 1.7;
+  }
+}
+
+/* Headings: serif for English, native display fonts for other scripts */
+.font-display {
+  font-family: var(--font-serif);
+}
+html[lang="ur"] .font-display {
+  font-family: "Noto Nastaliq Urdu", serif;
+  line-height: 2.1;
+}
+html[lang="si"] .font-display {
+  font-family: "Noto Sans Sinhala", sans-serif;
+}
+html[lang="ta"] .font-display {
+  font-family: "Noto Sans Tamil", sans-serif;
+}

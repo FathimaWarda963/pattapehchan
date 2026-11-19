@@ -1,0 +1,12 @@
+{
+  "country": {
+    "title": "Where is the land located?",
+    "hint": "This decides which records and rules we show you.",
+    "pk": "Pakistan",
+    "lk": "Sri Lanka"
+  },
+  "back": "Back",
+  "home": {
+    "welcome": "Welcome"
+  }
+}
