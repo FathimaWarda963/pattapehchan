@@ -1,0 +1,59 @@
+[
+  {
+    "id": "LK-001",
+    "ownerName": "K. Perera",
+    "plotNumber": "Lot 12",
+    "deedNumber": "SAMPLE-1001",
+    "place": "Sample Ward, Example District",
+    "perches": 20,
+    "boundaries": {
+      "north": { "type": "road", "name": "Temple Road" },
+      "east": { "type": "land", "name": "Lot 13 (S. Silva)" },
+      "south": { "type": "canal", "name": "Village canal" },
+      "west": { "type": "house", "name": "Lot 11 (N. Fernando)" }
+    },
+    "history": [
+      { "year": 2011, "type": "sale", "from": "M. Gunawardena", "to": "R. Perera" },
+      { "year": 2018, "type": "inheritance", "from": "R. Perera", "to": "K. Perera" },
+      { "year": 2022, "type": "mortgage", "to": "Sample Bank" },
+      { "year": 2024, "type": "mortgageRelease", "from": "Sample Bank" }
+    ]
+  },
+  {
+    "id": "LK-002",
+    "ownerName": "S. Fernando",
+    "plotNumber": "Lot 7",
+    "deedNumber": "SAMPLE-1002",
+    "place": "Sample Ward, Example District",
+    "perches": 12.5,
+    "boundaries": {
+      "north": { "type": "land", "name": "Lot 6 (A. Dias)" },
+      "east": { "type": "road", "name": "Lake Road" },
+      "south": { "type": "field", "name": "Paddy field" },
+      "west": { "type": "land", "name": "Lot 8 (R. Mendis)" }
+    },
+    "history": [
+      { "year": 2010, "type": "sale", "from": "A. Dias", "to": "L. Fernando" },
+      { "year": 2015, "type": "gift", "from": "L. Fernando", "to": "S. Fernando" },
+      { "year": 2020, "type": "dispute", "from": "Neighbour, Lot 8", "open": true }
+    ]
+  },
+  {
+    "id": "LK-003",
+    "ownerName": "T. Selvam",
+    "plotNumber": "Lot 3",
+    "deedNumber": "SAMPLE-1003",
+    "place": "Sample Town, Example District",
+    "perches": 30,
+    "boundaries": {
+      "north": { "type": "road", "name": "Main Street" },
+      "east": { "type": "road", "name": "Church Lane" },
+      "south": { "type": "house", "name": "Lot 4 (V. Kumar)" },
+      "west": { "type": "land", "name": "Coconut grove" }
+    },
+    "history": [
+      { "year": 2012, "type": "sale", "from": "P. Raj", "to": "A. Selvam" },
+      { "year": 2017, "type": "inheritance", "from": "A. Selvam", "to": "T. Selvam" }
+    ]
+  }
+]
