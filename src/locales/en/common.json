@@ -6,7 +6,37 @@
     "lk": "Sri Lanka"
   },
   "back": "Back",
+  "change": "Change",
+  "comingSoon": "This page is coming soon.",
+  "nav": {
+    "home": "Home",
+    "search": "Search",
+    "calculator": "Calculator",
+    "track": "Track"
+  },
+  "header": {
+    "language": "Language",
+    "help": "Help",
+    "settings": "Settings"
+  },
   "home": {
-    "welcome": "Welcome"
+    "welcome": "Welcome",
+    "subtitle": "What would you like to do today?",
+    "find": {
+      "title": "Find a land record",
+      "desc": "Look up an owner or plot and understand it in plain words."
+    },
+    "check": {
+      "title": "Check before you buy or sell",
+      "desc": "See a property's history and the documents you should verify."
+    },
+    "inherit": {
+      "title": "Calculate an inheritance share",
+      "desc": "Find out who inherits what, step by step."
+    },
+    "track": {
+      "title": "Track my application",
+      "desc": "See where your application stands."
+    }
   }
 }
