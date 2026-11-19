@@ -5,6 +5,7 @@ import CountryStep from './pages/CountryStep'
 import Home from './pages/Home'
 import Search from './pages/Search'
 import RecordResult from './pages/RecordResult'
+import Check from './pages/Check'
 import Placeholder from './pages/Placeholder'
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/search" element={<Search />} />
         <Route path="/record/:id" element={<RecordResult />} />
-        <Route path="/check" element={<Placeholder titleKey="home.check.title" />} />
+        <Route path="/check" element={<Check />} />
         <Route path="/calculator" element={<Placeholder titleKey="home.inherit.title" />} />
         <Route path="/track" element={<Placeholder titleKey="home.track.title" />} />
         <Route path="/help" element={<Placeholder titleKey="header.help" />} />

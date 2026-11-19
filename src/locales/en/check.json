@@ -1,0 +1,49 @@
+{
+  "check": {
+    "intro": "Work through these steps one by one. Your progress is saved on this device.",
+    "pkNotice": "This checklist for Pakistan is not added yet. Please choose Sri Lanka to try this page.",
+    "progress": "{{done}} of {{total}} steps done",
+    "details": "Why and how",
+    "reset": "Start over",
+    "allDone": "All steps ticked. You are ready to speak to a lawyer.",
+    "disclaimer": "This checklist is a guide, not legal advice. Have a lawyer confirm every step.",
+    "items": {
+      "seller": {
+        "title": "Confirm who the seller is",
+        "detail": "Ask for the seller's national ID and check that the name matches the owner on the deed. If someone else is selling for them, ask to see a legal power of attorney."
+      },
+      "deed": {
+        "title": "Read the deed carefully",
+        "detail": "Check the deed number, the owner's name, the size in perches and the date. Every detail should match what the seller tells you and what you see on the land."
+      },
+      "boundaries": {
+        "title": "Compare the boundaries with the land",
+        "detail": "Walk the land. Check what lies on the north, east, south and west sides against the deed. Note the surroundings too: neighbours, canals, fields."
+      },
+      "road": {
+        "title": "Confirm road access",
+        "detail": "Check which side has the road and whether you have a legal right to use it. A plot with no proper access is hard to use or resell."
+      },
+      "history": {
+        "title": "Trace the owners for about 15 years",
+        "detail": "Ask for the chain of earlier deeds. Write down who owned the land, when it changed hands and how: sale, gift or inheritance. Gaps in the chain are a warning sign."
+      },
+      "verify": {
+        "title": "Have the deed verified at the official registry",
+        "detail": "Usually through a lawyer, ask the official registry to confirm the deed is genuine and properly registered. Ask your lawyer which office does this."
+      },
+      "forgery": {
+        "title": "Watch for signs of forgery",
+        "detail": "Forged or altered deeds are a known risk. A lawyer should check signatures, stamps and numbers, and confirm the earlier deeds in the chain are real too."
+      },
+      "legal": {
+        "title": "Check for legal problems",
+        "detail": "Look for court cases, disputes, mortgages or claims by other family members. Any of these can stop a sale or cost you the land."
+      },
+      "lawyer": {
+        "title": "Get a lawyer's opinion before you pay",
+        "detail": "Ask a lawyer to review everything and give you a written opinion. Do not hand over money until this is done."
+      }
+    }
+  }
+}
