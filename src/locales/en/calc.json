@@ -1,0 +1,163 @@
+{
+  "calc": {
+    "stepLaw": "Law",
+    "stepFamily": "Family",
+    "stepResult": "Shares",
+    "stepOf": "Step {{n}} of {{total}}",
+    "lawTitle": "Which law applies to this family?",
+    "lawHint": "In Sri Lanka and Pakistan the rules depend on the family's legal background, not only on religion. If you are not sure, choose the last option.",
+    "familyTitle": "Who is alive from the family?",
+    "familyHint": "Count only the people who were alive when the person died.",
+    "resultTitle": "Estimated shares",
+    "yes": "Yes",
+    "no": "No",
+    "less": "Fewer",
+    "more": "More",
+    "continue": "Show the shares",
+    "startOver": "Start over",
+    "size": {
+      "label": "Land size (optional)",
+      "hint": "Enter the size to see each person's portion of the land."
+    },
+    "units": { "lk": "perches", "pk": "marla" },
+    "q": {
+      "gender": "The person who died was",
+      "spouse": "Is the husband or wife of the person who died alive?",
+      "children": "How many children are alive?",
+      "childDied": "Did any child die earlier, leaving children of their own?",
+      "otherRelatives": "Are the parents, brothers, sisters or other relatives of the person who died alive?",
+      "husband": "Is the husband alive?",
+      "wives": "How many wives are alive?",
+      "sons": "How many sons are alive?",
+      "daughters": "How many daughters are alive?",
+      "father": "Is the father alive?",
+      "mother": "Is the mother alive?",
+      "siblings": "Are any brothers, sisters or grandparents of the person who died alive?"
+    },
+    "gender": { "male": "A man", "female": "A woman" },
+    "people": {
+      "spouse": "Spouse",
+      "husband": "Husband",
+      "wife": "Wife",
+      "child": "Child",
+      "son": "Son",
+      "daughter": "Daughter",
+      "father": "Father",
+      "mother": "Mother"
+    },
+    "each": "each",
+    "portion": "About {{amount}} {{unit}} of the land",
+    "basis": "Based on: {{basis}}",
+    "draft": "Draft: these rules are still being checked by a lawyer.",
+    "awl": "The fixed shares added up to more than the whole estate, so each share was reduced in the same proportion (called awl).",
+    "disclaimer": "This is a plain-language guide, not legal advice. A will, debts, property already given away and special family situations can change the shares. Have a lawyer or court confirm the final division.",
+    "review": {
+      "title": "This situation is not covered yet",
+      "grandchildren": "The share of the children of a child who died earlier is set by special rules that are not built in yet.",
+      "otherHeirs": "In this situation other relatives may also inherit, and that calculation is not built in yet.",
+      "radd": "After the fixed shares, part of the estate is left over. How it is shared depends on the school of law and local rules.",
+      "noHeirs": "No surviving family members were selected.",
+      "advice": "Please speak to a lawyer. They can work out the exact shares."
+    },
+    "explain": {
+      "title": "A lawyer needs to work this out",
+      "intro": "Under this law the shares depend on specific facts about the family and the property, so we do not guess.",
+      "pointsTitle": "What decides the shares"
+    },
+    "r": {
+      "spouseFixed": "The surviving spouse receives {{frac}} of the estate.",
+      "childrenRest": "The children share the rest equally.",
+      "childrenAll": "With no surviving spouse, the children share the whole estate equally.",
+      "spouseAll": "With no children and no other relatives, the spouse receives everything.",
+      "husbandNoChild": "One-half, because there are no children.",
+      "husbandChild": "One-quarter, because there are children.",
+      "wifeNoChild": "One-quarter (shared equally if there is more than one wife), because there are no children.",
+      "wifeChild": "One-eighth (shared equally if there is more than one wife), because there are children.",
+      "motherChild": "One-sixth, because there are children.",
+      "motherNoChild": "One-third, because there are no children.",
+      "motherUmar": "One-third of what remains after the spouse's share, because only the spouse and both parents survive.",
+      "fatherChild": "One-sixth, because there is a son.",
+      "fatherDaughters": "One-sixth, plus whatever remains after the fixed shares.",
+      "fatherResidue": "Everything that remains after the other shares.",
+      "daughterHalf": "One-half, because she is the only daughter and there are no sons.",
+      "daughtersTwoThirds": "Two-thirds shared equally among the daughters, because there are no sons.",
+      "sonsDaughters": "They share what remains. Each son receives twice a daughter's share."
+    },
+    "laws": {
+      "lk-general": {
+        "title": "General law",
+        "desc": "Applies to most people who are not under Kandyan, Thesawalamai or Muslim law."
+      },
+      "lk-kandyan": {
+        "title": "Kandyan law",
+        "desc": "Usually for Sinhalese families with Kandyan roots (not only religion).",
+        "points": [
+          "Whether the property is ancestral (paraveni) or acquired matters.",
+          "Whether a daughter's marriage was binna (staying in the family home) or diga (moving to her husband's home) can change her rights.",
+          "A widow may get a life interest in some property rather than full ownership.",
+          "Courts apply these rules case by case, so get a lawyer's opinion."
+        ]
+      },
+      "lk-thesawalamai": {
+        "title": "Thesawalamai law",
+        "desc": "Usually for Tamil families of Jaffna origin.",
+        "points": [
+          "Property acquired during the marriage (thediathetam) is treated differently from inherited property.",
+          "The share of the surviving spouse depends on the kind of property.",
+          "Property that came from the mother's side and from the father's side may pass differently.",
+          "How to classify a property is often disputed, so a lawyer is essential."
+        ]
+      },
+      "lk-muslim": {
+        "title": "Muslim law",
+        "desc": "For Muslims. Sunni rules are used here."
+      },
+      "lk-unsure": {
+        "title": "Not sure",
+        "desc": "We will show you what to ask.",
+        "points": [
+          "Is the family Muslim? Then Muslim law applies.",
+          "Is the family of Jaffna Tamil background? Then Thesawalamai usually applies.",
+          "Is the family Sinhalese with Kandyan roots? Then Kandyan law may apply.",
+          "If none of these fit, the general law usually applies. Confirm with a lawyer."
+        ]
+      },
+      "pk-sunni": {
+        "title": "Muslim (Sunni)",
+        "desc": "Quranic shares, following Sunni (Hanafi) rules."
+      },
+      "pk-shia": {
+        "title": "Muslim (Shia)",
+        "desc": "Shia rules differ from Sunni rules, so a lawyer is needed.",
+        "points": [
+          "In Shia law the shares of some relatives, for example in a family with only daughters, differ from the Sunni rules.",
+          "So the Sunni calculation cannot be applied to a Shia family.",
+          "Speak to a scholar or lawyer who knows the Jafari school."
+        ]
+      },
+      "pk-christian": {
+        "title": "Christian",
+        "desc": "Under the Succession Act, 1925."
+      },
+      "pk-other": {
+        "title": "Hindu, Sikh, Parsi or other",
+        "desc": "These communities usually follow their own personal law or custom.",
+        "points": [
+          "Hindus, Sikhs and some other communities generally follow their own personal law or custom.",
+          "Parsis have separate provisions in the Succession Act, 1925.",
+          "For exact shares, speak to a lawyer who knows your community's law."
+        ]
+      },
+      "pk-unsure": {
+        "title": "Not sure",
+        "desc": "We will show you what to ask.",
+        "points": [
+          "Muslim family: choose Sunni or Shia as applies.",
+          "Christian family: the Succession Act, 1925 applies.",
+          "Other communities: ask a lawyer about their personal law.",
+          "If you are not sure, confirm with a lawyer."
+        ]
+      }
+    }
+  }
+}
