@@ -13,6 +13,7 @@ import enCheck from './locales/en/check.json'
 import urCheck from './locales/ur/check.json'
 import siCheck from './locales/si/check.json'
 import taCheck from './locales/ta/check.json'
+ feature/calculator
 import enCalc from './locales/en/calc.json'
 import urCalc from './locales/ur/calc.json'
 import siCalc from './locales/si/calc.json'
@@ -24,6 +25,15 @@ i18n.use(initReactI18next).init({
     ur: { translation: { ...ur, ...urRecords, ...urCheck, ...urCalc } },
     si: { translation: { ...si, ...siRecords, ...siCheck, ...siCalc } },
     ta: { translation: { ...ta, ...taRecords, ...taCheck, ...taCalc } },
+
+
+i18n.use(initReactI18next).init({
+  resources: {
+    en: { translation: { ...en, ...enRecords, ...enCheck } },
+    ur: { translation: { ...ur, ...urRecords, ...urCheck } },
+    si: { translation: { ...si, ...siRecords, ...siCheck } },
+    ta: { translation: { ...ta, ...taRecords, ...taCheck } },
+ main
   },
   lng: getSaved('pp-lang') || 'en',
   fallbackLng: 'en',

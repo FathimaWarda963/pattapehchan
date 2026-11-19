@@ -6,7 +6,9 @@ import Home from './pages/Home'
 import Search from './pages/Search'
 import RecordResult from './pages/RecordResult'
 import Check from './pages/Check'
+ feature/calculator
 import Calculator from './pages/Calculator'
+ main
 import Placeholder from './pages/Placeholder'
 
 function App() {
@@ -19,7 +21,11 @@ function App() {
         <Route path="/search" element={<Search />} />
         <Route path="/record/:id" element={<RecordResult />} />
         <Route path="/check" element={<Check />} />
+ feature/calculator
         <Route path="/calculator" element={<Calculator />} />
+
+        <Route path="/calculator" element={<Placeholder titleKey="home.inherit.title" />} />
+main
         <Route path="/track" element={<Placeholder titleKey="home.track.title" />} />
         <Route path="/help" element={<Placeholder titleKey="header.help" />} />
         <Route path="/settings" element={<Placeholder titleKey="header.settings" />} />
