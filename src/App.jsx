@@ -3,6 +3,8 @@ import Layout from './components/Layout'
 import LanguageGate from './pages/LanguageGate'
 import CountryStep from './pages/CountryStep'
 import Home from './pages/Home'
+import Search from './pages/Search'
+import RecordResult from './pages/RecordResult'
 import Placeholder from './pages/Placeholder'
 
 function App() {
@@ -12,7 +14,8 @@ function App() {
       <Route path="/country" element={<CountryStep />} />
       <Route element={<Layout />}>
         <Route path="/home" element={<Home />} />
-        <Route path="/search" element={<Placeholder titleKey="home.find.title" />} />
+        <Route path="/search" element={<Search />} />
+        <Route path="/record/:id" element={<RecordResult />} />
         <Route path="/check" element={<Placeholder titleKey="home.check.title" />} />
         <Route path="/calculator" element={<Placeholder titleKey="home.inherit.title" />} />
         <Route path="/track" element={<Placeholder titleKey="home.track.title" />} />

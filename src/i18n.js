@@ -5,13 +5,17 @@ import en from './locales/en/common.json'
 import ur from './locales/ur/common.json'
 import si from './locales/si/common.json'
 import ta from './locales/ta/common.json'
+import enRecords from './locales/en/records.json'
+import urRecords from './locales/ur/records.json'
+import siRecords from './locales/si/records.json'
+import taRecords from './locales/ta/records.json'
 
 i18n.use(initReactI18next).init({
   resources: {
-    en: { translation: en },
-    ur: { translation: ur },
-    si: { translation: si },
-    ta: { translation: ta },
+    en: { translation: { ...en, ...enRecords } },
+    ur: { translation: { ...ur, ...urRecords } },
+    si: { translation: { ...si, ...siRecords } },
+    ta: { translation: { ...ta, ...taRecords } },
   },
   lng: getSaved('pp-lang') || 'en',
   fallbackLng: 'en',
