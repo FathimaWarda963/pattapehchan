@@ -1,0 +1,23 @@
+{
+  "welcome": {
+    "title": "Welcome to PattaPehchan",
+    "intro": "PattaPehchan helps you understand land records, check a property before you buy or sell, and work out inheritance shares, in plain words.",
+    "sizeTitle": "First, choose a text size",
+    "sizeHint": "The whole page changes so you can see it. You can change this later.",
+    "whatTitle": "What you can do here",
+    "moveTitle": "How to move around",
+    "bottomBar": {
+      "title": "Bottom bar",
+      "body": "The four buttons at the bottom take you to Home, Search, Calculator and Track."
+    },
+    "holdTip": "Tip: on a computer, point at an icon. On a phone, press and hold it. You will see what it does.",
+    "laterNote": "You can change all of this later: tap the gear icon, called Settings, at the top of any page.",
+    "start": "Continue",
+    "reopen": "Show the welcome guide again"
+  },
+  "tip": {
+    "language": "Change the language of the whole site at any time. You stay on the same page.",
+    "help": "Explains the legal words used on this site. This page is coming soon.",
+    "settings": "Make the text bigger, switch on high contrast, or turn on the audio guide. Your choices are saved on this phone."
+  }
+}

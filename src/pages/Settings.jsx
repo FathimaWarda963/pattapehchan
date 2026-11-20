@@ -1,6 +1,7 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { RotateCcw } from 'lucide-react'
+import { RotateCcw, BookOpen } from 'lucide-react'
 import { loadSettings, saveSettings, applySettings, defaults } from '../settings'
 
 function Switch({ label, description, checked, onChange, onText, offText }) {
@@ -20,9 +21,7 @@ function Switch({ label, description, checked, onChange, onText, offText }) {
         onClick={() => onChange(!checked)}
         className={
           'min-h-[48px] min-w-[84px] rounded-full border-2 px-4 text-base font-bold transition focus-visible:outline-4 focus-visible:outline-offset-2 focus-visible:outline-forest ' +
-          (checked
-            ? 'border-forest bg-forest text-white'
-            : 'border-line bg-cream text-ink')
+          (checked ? 'border-forest bg-forest text-white' : 'border-line bg-cream text-ink')
         }
       >
         {checked ? onText : offText}
@@ -94,14 +93,23 @@ export default function Settings() {
         offText={t('settings.off')}
       />
 
-      <button
-        type="button"
-        onClick={() => update(defaults)}
-        className="mt-6 inline-flex min-h-[48px] items-center gap-2 rounded-xl border border-line bg-paper px-4 font-semibold text-forest focus-visible:outline-4 focus-visible:outline-forest"
-      >
-        <RotateCcw size={20} aria-hidden="true" />
-        {t('settings.reset')}
-      </button>
+      <div className="mt-6 flex flex-wrap gap-3">
+        <button
+          type="button"
+          onClick={() => update(defaults)}
+          className="inline-flex min-h-[48px] items-center gap-2 rounded-xl border border-line bg-paper px-4 font-semibold text-forest focus-visible:outline-4 focus-visible:outline-forest"
+        >
+          <RotateCcw size={20} aria-hidden="true" />
+          {t('settings.reset')}
+        </button>
+        <Link
+          to="/welcome"
+          className="inline-flex min-h-[48px] items-center gap-2 rounded-xl border border-line bg-paper px-4 font-semibold text-forest focus-visible:outline-4 focus-visible:outline-forest"
+        >
+          <BookOpen size={20} aria-hidden="true" />
+          {t('welcome.reopen')}
+        </Link>
+      </div>
     </div>
   )
 }

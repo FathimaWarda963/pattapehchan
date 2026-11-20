@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { languages } from '../languages'
-import { save } from '../storage'
+import { getSaved, save } from '../storage'
 import Logo from '../components/Logo'
 
 export default function LanguageGate() {
@@ -11,7 +11,8 @@ export default function LanguageGate() {
   const choose = (code) => {
     i18n.changeLanguage(code)
     save('pp-lang', code)
-    navigate('/country')
+    // First visit: show the welcome guide. Returning visitors skip it.
+    navigate(getSaved('pp-welcomed') ? '/country' : '/welcome')
   }
 
   return (
