@@ -7,6 +7,8 @@ import Search from './pages/Search'
 import RecordResult from './pages/RecordResult'
 import Check from './pages/Check'
 import Calculator from './pages/Calculator'
+import Track from './pages/Track'
+import Settings from './pages/Settings'
 import Placeholder from './pages/Placeholder'
 
 function App() {
@@ -20,9 +22,9 @@ function App() {
         <Route path="/record/:id" element={<RecordResult />} />
         <Route path="/check" element={<Check />} />
         <Route path="/calculator" element={<Calculator />} />
-        <Route path="/track" element={<Placeholder titleKey="home.track.title" />} />
+        <Route path="/track" element={<Track />} />
+        <Route path="/settings" element={<Settings />} />
         <Route path="/help" element={<Placeholder titleKey="header.help" />} />
-        <Route path="/settings" element={<Placeholder titleKey="header.settings" />} />
       </Route>
     </Routes>
   )

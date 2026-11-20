@@ -17,13 +17,17 @@ import enCalc from './locales/en/calc.json'
 import urCalc from './locales/ur/calc.json'
 import siCalc from './locales/si/calc.json'
 import taCalc from './locales/ta/calc.json'
+import enTs from './locales/en/trackSettings.json'
+import urTs from './locales/ur/trackSettings.json'
+import siTs from './locales/si/trackSettings.json'
+import taTs from './locales/ta/trackSettings.json'
 
 i18n.use(initReactI18next).init({
   resources: {
-    en: { translation: { ...en, ...enRecords, ...enCheck, ...enCalc } },
-    ur: { translation: { ...ur, ...urRecords, ...urCheck, ...urCalc } },
-    si: { translation: { ...si, ...siRecords, ...siCheck, ...siCalc } },
-    ta: { translation: { ...ta, ...taRecords, ...taCheck, ...taCalc } },
+    en: { translation: { ...en, ...enRecords, ...enCheck, ...enCalc, ...enTs } },
+    ur: { translation: { ...ur, ...urRecords, ...urCheck, ...urCalc, ...urTs } },
+    si: { translation: { ...si, ...siRecords, ...siCheck, ...siCalc, ...siTs } },
+    ta: { translation: { ...ta, ...taRecords, ...taCheck, ...taCalc, ...taTs } },
   },
   lng: getSaved('pp-lang') || 'en',
   fallbackLng: 'en',
