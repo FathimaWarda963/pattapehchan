@@ -44,3 +44,19 @@ html[lang="si"] .font-display {
 html[lang="ta"] .font-display {
   font-family: "Noto Sans Tamil", sans-serif;
 }
+
+/* Accessibility settings */
+html[data-text="large"] {
+  font-size: 112.5%;
+}
+html[data-text="xlarge"] {
+  font-size: 125%;
+}
+:root[data-contrast="high"] {
+  --color-cream: #ffffff;
+  --color-paper: #ffffff;
+  --color-ink: #000000;
+  --color-forest: #0b2e20;
+  --color-line: #5a5a5a;
+  --color-gold: #7a5200;
+}

@@ -1,0 +1,46 @@
+{
+  "track": {
+    "intro": "Enter the application ID from your receipt.",
+    "label": "Application ID",
+    "placeholder": "For example: PP-1001",
+    "button": "Check status",
+    "tryThese": "Try one of these:",
+    "notFound": "No application found with this ID. Check it and try again.",
+    "sample": "Sample application",
+    "type": { "request": "Land record request", "verify": "Deed verification" },
+    "stage": {
+      "received": "Received",
+      "review": "Under review",
+      "verified": "Verified",
+      "complete": "Complete"
+    },
+    "stageDesc": {
+      "received": "We have received your application.",
+      "review": "An officer is checking your documents.",
+      "verified": "Your details have been confirmed.",
+      "complete": "Your application is complete."
+    },
+    "state": { "done": "Done", "current": "In progress", "upcoming": "Next" },
+    "eta": "Estimated time left: about {{days}} days",
+    "etaDone": "Completed",
+    "actionTitle": "Action needed",
+    "actionDocument": "One document is missing or unclear. Submit it again to avoid delay.",
+    "sampleNote": "All applications here are made-up samples.",
+    "disclaimer": "This tracker shows sample data. The real status is held by the official registry."
+  },
+  "settings": {
+    "intro": "Changes are saved on this device.",
+    "textSize": "Text size",
+    "normal": "Normal",
+    "large": "Large",
+    "xlarge": "Extra large",
+    "contrast": "High contrast",
+    "contrastDesc": "Stronger colours and borders for easier reading.",
+    "audio": "Audio guide",
+    "audioDesc": "Turn on spoken guidance where it is available. Recorded audio is coming soon.",
+    "on": "On",
+    "off": "Off",
+    "preview": "This is how your text will look.",
+    "reset": "Reset to default"
+  }
+}

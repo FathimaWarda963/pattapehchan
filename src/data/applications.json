@@ -1,0 +1,24 @@
+[
+  {
+    "id": "PP-1001",
+    "type": "request",
+    "stage": 2,
+    "dates": ["2026-11-02", "2026-11-05"],
+    "etaDays": 7
+  },
+  {
+    "id": "PP-1002",
+    "type": "verify",
+    "stage": 4,
+    "dates": ["2026-10-12", "2026-10-15", "2026-10-26", "2026-11-03"],
+    "etaDays": 0
+  },
+  {
+    "id": "PP-1003",
+    "type": "verify",
+    "stage": 2,
+    "dates": ["2026-11-10", "2026-11-12"],
+    "etaDays": 10,
+    "actionNeeded": "document"
+  }
+]
