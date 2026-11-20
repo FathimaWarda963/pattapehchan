@@ -5,6 +5,9 @@ export const languages = [
     dir: 'rtl',
     font: '"Noto Nastaliq Urdu", serif',
     prompt: 'اپنی زبان منتخب کریں',
+    listen: 'سنیں',
+    hold: 'منتخب کرنے کے لیے دبائے رکھیں',
+    chosen: 'اردو منتخب کر لی گئی',
   },
   {
     code: 'en',
@@ -12,6 +15,9 @@ export const languages = [
     dir: 'ltr',
     font: '"Lora", serif',
     prompt: 'Choose your language',
+    listen: 'Listen',
+    hold: 'Hold to choose',
+    chosen: 'English selected',
   },
   {
     code: 'si',
@@ -19,6 +25,9 @@ export const languages = [
     dir: 'ltr',
     font: '"Noto Sans Sinhala", sans-serif',
     prompt: 'ඔබේ භාෂාව තෝරන්න',
+    listen: 'සවන් දෙන්න',
+    hold: 'තෝරා ගැනීමට අල්ලාගෙන සිටින්න',
+    chosen: 'සිංහල තෝරා ගන්නා ලදී',
   },
   {
     code: 'ta',
@@ -26,5 +35,8 @@ export const languages = [
     dir: 'ltr',
     font: '"Noto Sans Tamil", sans-serif',
     prompt: 'உங்கள் மொழியைத் தேர்ந்தெடுக்கவும்',
+    listen: 'கேளுங்கள்',
+    hold: 'தேர்ந்தெடுக்க அழுத்திப் பிடிக்கவும்',
+    chosen: 'தமிழ் தேர்ந்தெடுக்கப்பட்டது',
   },
 ]

@@ -1,0 +1,15 @@
+{
+  "spoken": {
+    "listen": "Listen",
+    "hold": "Hold to choose",
+    "stripHelp": "Audio helper. Tap to hear the next option. Press and hold to choose.",
+    "readGuide": "Read this guide aloud",
+    "selected": "{{name}} selected",
+    "announce": {
+      "welcome": "Welcome guide. Tap the right edge of the screen to hear your options.",
+      "country": "Where is the land? Tap the right edge of the screen to hear the options.",
+      "home": "What would you like to do? Tap the right edge of the screen to hear the options."
+    },
+    "noVoice": "This device has no voice for {{language}}, and no recording is available for this screen yet."
+  }
+}
