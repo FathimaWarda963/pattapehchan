@@ -21,13 +21,17 @@ import enTs from './locales/en/trackSettings.json'
 import urTs from './locales/ur/trackSettings.json'
 import siTs from './locales/si/trackSettings.json'
 import taTs from './locales/ta/trackSettings.json'
+import enWelcome from './locales/en/welcome.json'
+import urWelcome from './locales/ur/welcome.json'
+import siWelcome from './locales/si/welcome.json'
+import taWelcome from './locales/ta/welcome.json'
 
 i18n.use(initReactI18next).init({
   resources: {
-    en: { translation: { ...en, ...enRecords, ...enCheck, ...enCalc, ...enTs } },
-    ur: { translation: { ...ur, ...urRecords, ...urCheck, ...urCalc, ...urTs } },
-    si: { translation: { ...si, ...siRecords, ...siCheck, ...siCalc, ...siTs } },
-    ta: { translation: { ...ta, ...taRecords, ...taCheck, ...taCalc, ...taTs } },
+    en: { translation: { ...en, ...enRecords, ...enCheck, ...enCalc, ...enTs, ...enWelcome } },
+    ur: { translation: { ...ur, ...urRecords, ...urCheck, ...urCalc, ...urTs, ...urWelcome } },
+    si: { translation: { ...si, ...siRecords, ...siCheck, ...siCalc, ...siTs, ...siWelcome } },
+    ta: { translation: { ...ta, ...taRecords, ...taCheck, ...taCalc, ...taTs, ...taWelcome } },
   },
   lng: getSaved('pp-lang') || 'en',
   fallbackLng: 'en',

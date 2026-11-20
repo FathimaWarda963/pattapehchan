@@ -1,9 +1,10 @@
 import { Link, NavLink, Outlet } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { Home, Search, Calculator, ClipboardList, HelpCircle, Settings } from 'lucide-react'
+import { Home, Search, Calculator, ClipboardList, HelpCircle, Settings, Globe } from 'lucide-react'
 import { languages } from '../languages'
 import { save } from '../storage'
 import Logo from './Logo'
+import HoverTip from './HoverTip'
 
 const navItems = [
   { to: '/home', key: 'nav.home', Icon: Home, end: true },
@@ -21,34 +22,56 @@ export default function Layout() {
   }
 
   const iconLink =
-    'inline-flex items-center justify-center min-w-[44px] min-h-[44px] rounded-xl text-forest hover:bg-cream focus-visible:outline-4 focus-visible:outline-forest'
+    'flex min-h-[56px] min-w-[64px] flex-col items-center justify-center gap-0.5 rounded-xl px-1 text-sm font-semibold text-forest hover:bg-cream focus-visible:outline-4 focus-visible:outline-forest'
 
   return (
     <div className="min-h-screen flex flex-col">
       <header className="sticky top-0 z-10 bg-paper border-b border-line">
-        <div className="max-w-2xl mx-auto flex items-center justify-between gap-2 px-4 py-2">
-          <Link to="/home" aria-label="PattaPehchan" className="rounded-xl focus-visible:outline-4 focus-visible:outline-forest">
+        <div className="max-w-2xl mx-auto flex flex-wrap items-center justify-between gap-2 px-4 py-2">
+          <Link
+            to="/home"
+            aria-label="PattaPehchan"
+            className="rounded-xl focus-visible:outline-4 focus-visible:outline-forest"
+          >
             <Logo compact />
           </Link>
+
           <div className="flex items-center gap-1">
-            <select
-              aria-label={t('header.language')}
-              value={i18n.language}
-              onChange={changeLanguage}
-              className="min-h-[44px] rounded-xl border border-line bg-paper px-2 text-base font-semibold text-forest focus-visible:outline-4 focus-visible:outline-forest"
-            >
-              {languages.map((l) => (
-                <option key={l.code} value={l.code}>
-                  {l.name}
-                </option>
-              ))}
-            </select>
-            <Link to="/help" aria-label={t('header.help')} className={iconLink}>
-              <HelpCircle size={24} aria-hidden="true" />
-            </Link>
-            <Link to="/settings" aria-label={t('header.settings')} className={iconLink}>
-              <Settings size={24} aria-hidden="true" />
-            </Link>
+            <HoverTip Icon={Globe} title={t('header.language')} body={t('tip.language')}>
+              {(id) => (
+                <select
+                  aria-label={t('header.language')}
+                  aria-describedby={id}
+                  value={i18n.language}
+                  onChange={changeLanguage}
+                  className="min-h-[56px] rounded-xl border border-line bg-paper px-2 text-base font-semibold text-forest focus-visible:outline-4 focus-visible:outline-forest"
+                >
+                  {languages.map((l) => (
+                    <option key={l.code} value={l.code}>
+                      {l.name}
+                    </option>
+                  ))}
+                </select>
+              )}
+            </HoverTip>
+
+            <HoverTip Icon={HelpCircle} title={t('header.help')} body={t('tip.help')}>
+              {(id) => (
+                <Link to="/help" aria-describedby={id} className={iconLink}>
+                  <HelpCircle size={26} aria-hidden="true" />
+                  <span>{t('header.help')}</span>
+                </Link>
+              )}
+            </HoverTip>
+
+            <HoverTip Icon={Settings} title={t('header.settings')} body={t('tip.settings')}>
+              {(id) => (
+                <Link to="/settings" aria-describedby={id} className={iconLink}>
+                  <Settings size={26} aria-hidden="true" />
+                  <span>{t('header.settings')}</span>
+                </Link>
+              )}
+            </HoverTip>
           </div>
         </div>
       </header>

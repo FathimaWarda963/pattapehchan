@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 import Layout from './components/Layout'
 import LanguageGate from './pages/LanguageGate'
+import Welcome from './pages/Welcome'
 import CountryStep from './pages/CountryStep'
 import Home from './pages/Home'
 import Search from './pages/Search'
@@ -15,6 +16,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<LanguageGate />} />
+      <Route path="/welcome" element={<Welcome />} />
       <Route path="/country" element={<CountryStep />} />
       <Route element={<Layout />}>
         <Route path="/home" element={<Home />} />
